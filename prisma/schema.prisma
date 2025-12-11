@@ -14,8 +14,46 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(uuid())
-  name     String
-  email    String @unique
-  password String
+  id                String        @id @default(uuid())
+  name              String
+  email             String        @unique
+  password          String
+  createdHeaderInfo Header_info[]
+  createdNavbar     Navbar[]
+}
+
+model Header_info {
+  id          String  @id @default(uuid())
+  lang        String
+  welcomeText String
+  address     String
+  user        User?   @relation(fields: [authorId], references: [id])
+  authorId    String?
+}
+
+model Navbar {
+  id               String         @id @default(uuid())
+  lang             String
+  logo             String
+  menu             Navbar_menu[]
+  contact          Navbar_contact @relation(fields: [navbar_contactId], references: [id])
+  navbar_contactId String
+  user             User?          @relation(fields: [authorId], references: [id])
+  authorId         String?
+}
+
+model Navbar_menu {
+  id       String  @id @default(uuid())
+  label    String
+  href     String
+  navbar   Navbar? @relation(fields: [navbarId], references: [id])
+  navbarId String?
+}
+
+model Navbar_contact {
+  id      String   @id @default(uuid())
+  title   String
+  phone   String
+  icon    String
+  navbars Navbar[]
 }
