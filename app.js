@@ -1,12 +1,10 @@
 import express from 'express';
 import path, { dirname } from 'path';
-import logger from 'morgan';
 import { fileURLToPath } from 'url';
+import logger from 'morgan';
+import BaseUrlMiddleware from './middlewares/base-url.js';
+import AppRouter from './routes/index.js';
 import 'dotenv/config';
-
-import IndexRouter from './routes/index.js';
-import UsersRouter from './routes/users.js';
-import HeaderInfoRouter from './routes/headerInfos.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -21,9 +19,8 @@ app.use(express.json());
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', IndexRouter);
-app.use('/api/users', UsersRouter);
-app.use('/api/header_infos', HeaderInfoRouter);
+app.use(BaseUrlMiddleware);
+app.use(AppRouter);
 
 app.listen(port, () => {
     console.log(`Server has been started on port ${port}`);

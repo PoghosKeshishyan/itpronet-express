@@ -1,11 +1,14 @@
 import { Router } from 'express';
-import expressListEndpoints from 'express-list-endpoints';
+import getHomePage from '../controllers/index.js';
+import UsersRouter from './users.js';
+import HeaderInfoRouter from './headerInfos.js';
+import NavbarRouter from './navbars.js';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    const apiList = expressListEndpoints(req.app);
-    res.render('index');
-});
+router.get('/', getHomePage);
+router.use('/api/users', UsersRouter);
+router.use('/api/header_infos', HeaderInfoRouter);
+router.use('/api/navbars', NavbarRouter);
 
 export default router;

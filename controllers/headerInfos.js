@@ -44,14 +44,14 @@ export const add = async (req, res) => {
     }
 
     try {
-        const newData = await prisma.header_info.create({
+        const headerInfo = await prisma.header_info.create({
             data: {
                 ...data,
                 authorId: req.user.id,
             },
         });
 
-        res.status(201).json(newData);
+        res.status(201).json(headerInfo);
     } catch (error) {
         res.status(500).json({ message: "Failed to add header info" });
     }
@@ -62,14 +62,14 @@ export const edit = async (req, res) => {
     const id = req.params.id;
 
     try {
-        const newData = await prisma.header_info.update({
+        const headerInfo = await prisma.header_info.update({
             where: {
                 id,
             },
             data,
         });
 
-        res.status(200).json(newData);
+        res.status(200).json(headerInfo);
     } catch (error) {
         if (error.code === 'P2025') {
             return res.status(404).json({ message: 'HeaderInfo not found' });
