@@ -5,7 +5,7 @@
 
     <% apiList.forEach((elem, index) => { %>
         <a href="<%= elem %>" target="_blank">
-            "<%= elem %>"<% if (index !== apiList.length-1) { %>,<% } %>
+            "<%= elem %>"<% if (index !== apiList.length-1) { %><b>,</b><% } %>
         </a> 
     <% }) %>
 

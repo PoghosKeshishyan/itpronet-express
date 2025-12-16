@@ -46,6 +46,7 @@ p {
 
 .api-list b {
   font-family: 'Menlo';
+  color: #000;
 }
 
 .api-list a {
