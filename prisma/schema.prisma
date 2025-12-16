@@ -14,12 +14,14 @@ datasource db {
 }
 
 model User {
-  id                String        @id @default(uuid())
-  name              String
-  email             String        @unique
-  password          String
-  createdHeaderInfo Header_info[]
-  createdNavbar     Navbar[]
+  id                    String           @id @default(uuid())
+  name                  String
+  email                 String           @unique
+  password              String
+  createdHeaderInfo     Header_info[]
+  createdNavbar         Navbar[]
+  createdSlider         Slider[]
+  createdServiceSection ServiceSection[]
 }
 
 model Header_info {
@@ -56,4 +58,47 @@ model Navbar_contact {
   phone   String
   icon    String
   navbars Navbar[]
+}
+
+model Slider {
+  id       String  @id @default(uuid())
+  lang     String
+  slides   Slide[]
+  user     User?   @relation(fields: [authorId], references: [id])
+  authorId String?
+}
+
+model Slide {
+  id       String  @id @default(uuid())
+  title    String
+  text     String
+  image    String
+  slider   Slider? @relation(fields: [sliderId], references: [id])
+  sliderId String?
+}
+
+model ServiceSection {
+  id          String    @id @default(uuid())
+  lang        String
+  heading     String
+  description String
+  services    Service[]
+  user        User?     @relation(fields: [authorId], references: [id])
+  authorId    String?
+}
+
+model Service {
+  id        String         @id @default(uuid())
+  title     String
+  image     String
+  section   ServiceSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  sectionId String
+  types     ServiceType[]
+}
+
+model ServiceType {
+  id        String  @id @default(uuid())
+  value     String
+  service   Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  serviceId String
 }

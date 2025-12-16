@@ -3,8 +3,10 @@
 <div class="api-list">
     <b>[</b>
 
-    <% apiList.forEach(elem => { %>
-        <a href="<%= elem %>" target="_blank"><%= elem %></a>
+    <% apiList.forEach((elem, index) => { %>
+        <a href="<%= elem %>" target="_blank">
+            "<%= elem %>"<% if (index !== apiList.length-1) { %>,<% } %>
+        </a> 
     <% }) %>
 
     <b>]</b>

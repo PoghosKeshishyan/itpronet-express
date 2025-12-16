@@ -1,0 +1,444 @@
+{
+  "top_header": [
+    {
+      "id": 1,
+      "lang": "EN",
+      "welcomeText": "Welcome to ItProNet Yerevan Center",
+      "address": "47 M. Khorenatsi St., Apt. 36"
+    },
+    {
+      "id": 2,
+      "lang": "AM",
+      "welcomeText": "Բարի գալուստ ItProNet ԵՐԵՎԱՆ ԿԵՆՏՐՈՆ",
+      "address": " Մ.ԽՈՐԵՆԱՑՈՒ Փ. 47, ԲՆ. 36"
+    }
+  ],
+  "navbar": [
+    {
+      "id": "1",
+      "lang": "EN",
+      "logo": "ProNetIT",
+      "menu": [
+        { "label": "Home", "href": "/" },
+        { "label": "Services", "href": "/services" },
+        { "label": "Projects", "href": "#featured" },
+        { "label": "About Us", "href": "#products" },
+        { "label": "Contact", "href": "#contact" }
+      ],
+      "contact": {
+        "title": "ContactUS",
+        "phone": "+374 33 555 302",
+        "icon": "/images/headerphone.png"
+      }
+    },
+    {
+      "id": "2",
+      "lang": "AM",
+      "logo": "ITProNet",
+      "menu": [
+        { "label": "Գլխավոր", "href": "/" },
+        { "label": "Ծառայություններ", "href": "/services" },
+        { "label": "Ծրագիրներ", "href": "#featured" },
+        { "label": "Մեր Մասին", "href": "#products" },
+        { "label": "Կապ", "href": "#contact" }
+      ],
+      "contact": {
+        "title": "Կապ մեզ հետ",
+        "phone": "+374 99 013 300",
+        "icon": "/images/headerphone.png"
+      }
+    }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "lang": "EN",
+      "slides": [
+        {
+          "title": "Modern IT Solutions",
+          "text": "Your trusted partner in information technology, networking, and security systems",
+          "image": "/images/slider1.jpg"
+        },
+        {
+          "title": "Powerful Infrastructure",
+          "text": "We provide high-quality services tailored to your business needs, from design to ongoing support.",
+          "image": "/images/slide2.jpg"
+        },
+        {
+          "title": "24/7 Professional Support",
+          "text": "We deliver high-quality, customized services aligned with your business needs, from initial design to ongoing maintenance",
+          "image": "/images/slideri3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "AM",
+      "slides": [
+        {
+          "title": "Ժամանակակից IT լուծումներ",
+          "text": "Ձեր վստահելի գործընկերը տեղեկատվական տեխնոլոգիաների, ցանցերի և անվտանգային համակարգերի ոլորտում",
+          "image": "/images/slider1.jpg"
+        },
+        {
+          "title": "Հզոր ենթակառուցվածք",
+          "text": "Մենք տրամադրում ենք բարձրորակ, բիզնեսի կարիքներին համապատասխանեցված ծառայություններ՝ նախագծումից մինչև մշտական սպասարկում",
+          "image": "/images/slide2.jpg"
+        },
+        {
+          "title": "24/7 Մասնագիտական աջակցություն",
+          "text": "Մենք տրամադրում ենք բարձրորակ, բիզնեսի կարիքներին համապատասխանեցված ծառայություններ՝ նախագծումից մինչև մշտական սպասարկում",
+          "image": "/images/slideri3.jpg"
+        }
+      ]
+    }
+  ],
+  "servicesSection": [
+    {
+      "lang": "EN",
+      "heading": "BEST OUR ITProNet SERVICES FOR OUR BUSINESS",
+      "description": "IT solutions in one place: CCTV systems, servers, intercoms, network services, and web/API development. Reliable, professional, and fast service.",
+      "services": [
+        {
+          "title": "IT & Networking Solutions",
+          "image": "/images/services1.png",
+          "types": [
+            "Network design and implementation (LAN / WAN / Wi-Fi)",
+            "Server installation and management (Windows / Linux)",
+            "Active Directory (AD) design and management",
+            "Network equipment configuration (Router, Switch)",
+            "Cloud solutions integration (Cloud Services)"
+          ]
+        },
+        {
+          "title": "Security Systems",
+          "image": "/images/services2.png",
+          "types": [
+            "Integrated Security Solutions",
+            "Video Monitoring & Analytics",
+            "Secure Access Management",
+            "Infrastructure Protection",
+            "Ongoing Security Support"
+          ]
+        },
+        {
+          "title": "Fire & alarm systems",
+          "image": "/images/services3.png",
+          "types": [
+            "Fire Detectors Installation",
+            "Automated Fire Systems",
+            "Alarm System Integration",
+            "Custom Alert Solutions",
+            "Monitoring & Testing Services"
+          ]
+        },
+        {
+          "title": "Access control & turnstiles",
+          "image": "/images/services4.png",
+          "types": [
+            "Corporate & Public Access Control",
+            "Turnstile & Gate Installation",
+            "Biometric & QR Access Solutions",
+            "Integrated Security Access",
+            "Smart Access Management",
+            "Ongoing Maintenance & Updates"
+          ]
+        },
+        {
+          "title": "Communication Solutions",
+          "image": "/images/services5.png",
+          "types": [
+            "Comprehensive audio and video communication solutions",
+            "Design of internal communication systems for offices and companies",
+            "Deployment of VoIP and IP telephony networks",
+            "Technical integration for online conferences and remote work",
+            "Continuous monitoring and maintenance of systems and equipment",
+            "Provision of secure and encrypted communication channels"
+          ]
+        },
+        {
+          "title": "Web & API Development",
+          "image": "/images/icon.png",
+          "types": [
+            "Web Development (Front-end & Back-end)",
+            "API Design & Integration",
+            "Secure Data Transfer Solutions",
+            "Performance & Optimization",
+            "CMS & E-commerce Solutions",
+            "API Monitoring & Updates",
+            "System Integration & Automation"
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "AM",
+      "heading": "ՄԵՐ ԼԱՎԱԳՈՒՅՆ ITProNet ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԸ",
+      "description": "IT լուծումներ մեկ տեղում՝ CCTV համակարգեր, սերվերներ, դոմոֆոններ, ցանցային ծառայություններ և web/API մշակում. Հուսալի, պրոֆեսիոնալ և արագ սպասարկում։",
+      "services": [
+        {
+          "title": "IT և ցանցային լուծումներ",
+          "image": "/images/services1.png",
+          "types": [
+            "Ցանցի նախագծում և իրականացում (LAN / WAN / Wi-Fi)",
+            "Սերվերների տեղադրում և կառավարում (Windows / Linux)",
+            "Active Directory (AD) նախագծում և կառավարում",
+            "Ցանցային սարքավորումների կարգավորում (Router, Switch)",
+            "Ամպային լուծումների ինտեգրում (Cloud Services)"
+          ]
+        },
+        {
+          "title": "Անվտանգության համակարգեր",
+          "image": "/images/services2.png",
+          "types": [
+            "Համալիր անվտանգության լուծումների նախագծում",
+            "Տեսահսկման և վերլուծական համակարգեր",
+            "Մուտքի և անձնակազմի վերահսկում",
+            "Տվյալների և ենթակառուցվածքի պաշտպանություն",
+            "Անվտանգ կապերի կազմակերպում",
+            "Անվտանգության քաղաքականությունների ներդրում"
+          ]
+        },
+        {
+          "title": "Հրդեհային և ահազանգման համակարգեր",
+          "image": "/images/services3.png",
+          "types": [
+            "Հրդեհային դետեկտորների և ազդանշանների տեղադրում",
+            "Ամբողջ շենքի ավտոմատ հրդեհային համակարգերի նախագծում",
+            "Հրդեհային և անվտանգության ազդանշանների ինտեգրացիա",
+            "Անհատական և կորպորատիվ ահազանգման համակարգերի մշակում",
+            "Մշտադիտարկման և փորձարկման ծառայություններ"
+          ]
+        },
+        {
+          "title": "Մուտքի կառավարման համակարգեր և տուրնիկետներ",
+          "image": "/images/services4.png",
+          "types": [
+            "Կորպորատիվ և հանրային տարածքների մուտքի վերահսկման համակարգերի նախագծում",
+            "Տուրնիկետների և էլեկտրոնային անցագոտիների տեղադրում",
+            "Բնական և QR/բիոմետրիկ մուտքի վավերացման լուծումներ",
+            "Համակարգերի ինտեգրացիա անվտանգության ու տեսահսկման հետ",
+            "Արհեստական ինտելեկտով մուտքի հսկողություն (Smart Access)"
+          ]
+        },
+        {
+          "title": "Հաղորդակցության լուծումներ",
+          "image": "/images/services5.png",
+          "types": [
+            "Վիդեո և ձայնային կապի համապարփակ լուծումներ",
+            "Տնօրինության և ընկերության ներսի կոմունիկացիոն համակարգերի նախագծում",
+            "VoIP և IP հեռախոսային ցանցերի տեղադրում",
+            "Օնլայն կոնֆերանսների և հեռավար աշխատանքի տեխնիկական ինտեգրացիա",
+            "Համակարգերի և սարքավորումների մշտադիտարկում ու սպասարկում",
+            "Անվտանգ և կոդավորված հաղորդակցության միջոցների ապահովում",
+            "Ընդհանուր IT ենթակառուցվածքի հաղորդակցման օպտիմալացում"
+          ]
+        },
+        {
+          "title": "Վեբ կայքերի և API մշակում",
+          "image": "/images/icon.png",
+          "types": [
+            "Վեբ կայքերի նախագծում և front-end/back-end զարգացում",
+            "API նախագծում և ինտեգրացիա տարբեր համակարգերի միջև",
+            "Հաստատված և անվտանգ տվյալների փոխանցման լուծումներ",
+            "Կայքերի և հավելվածների արագության և արդյունավետության օպտիմալացում",
+            "CMS և e-commerce համակարգերի ստեղծում ու ադմինիստրատիվ ինտեգրացիա",
+            "API մոդուլների մշտադիտարկում և թարմացում",
+            "Պլատֆորմների միջև seamless ինտեգրացիա և ավտոմատացում"
+          ]
+        }
+      ]
+    }
+  ],
+  "counter": [
+    {
+      "id": 1,
+      "lang": "EN",
+      "counters": [
+        {
+          "id": 1,
+          "image": "/images/avatar1.png",
+          "value": "2.0K",
+          "label": "Our Active Member"
+        },
+        {
+          "id": 2,
+          "image": "/images/avatar2.png",
+          "value": "+1.2K",
+          "label": "Our Total Projects"
+        },
+        {
+          "id": 3,
+          "image": "/images/avatar3.png",
+          "value": "+10",
+          "label": "Our Winning Award"
+        },
+        {
+          "id": 4,
+          "image": "/images/avatar4.png",
+          "value": "+20",
+          "label": "Our Team Member"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "lang": "AM",
+      "counters": [
+        {
+          "id": 5,
+          "image": "/images/avatar1.png",
+          "value": "2.0K",
+          "label": "Մեր ակտիվ անդամը"
+        },
+        {
+          "id": 6,
+          "image": "/images/avatar2.png",
+          "value": "+1.2K",
+          "label": "Մեր ընդհանուր նախագծերը"
+        },
+        {
+          "id": 7,
+          "image": "/images/avatar3.png",
+          "value": "+10",
+          "label": "Մեր հաղթած մրցանակը"
+        },
+        {
+          "id": 8,
+          "image": "/images/avatar4.png",
+          "value": "+20",
+          "label": "Մեր թիմի անդամը"
+        }
+      ]
+    }
+  ],
+  "itsolution": [
+    {
+      "id": 1,
+      "lang": "EN",
+      "titleSmall": "HOW ItProNet WORKS",
+      "titleBig": "We Are Leads In ItProNet Solutions.",
+      "description": "Build a better security ecosystem with ItProNet. Our high-performance, durable IP security cameras are trusted and secure, with configurations designed for every deployment.",
+      "worksTypes": [
+        {
+          "title": "Artificial Intelligence",
+          "description": "Find video clips of interest in seconds classify people, vehicles & audio events"
+        },
+        {
+          "title": "Augmented Reality",
+          "description": "Integrate technologies, utilize hardware, and enhance your ecosystem."
+        },
+        {
+          "title": "Website Development",
+          "description": "We create dynamic web applications that deliver high performance, flexibility, and a seamless user experience by integrating modern technologies and efficient architectural solutions"
+        }
+      ],
+      "images": {
+        "leftColumn": [
+          { "src": "/images/test2.png", "width": 330, "height": 274 },
+          { "src": "/images/test3.png", "width": 235, "height": 230 },
+          { "src": "/images/test1.png", "width": 340, "height": 165 }
+        ],
+        "rightColumn": [
+          { "src": "/images/icon.png", "width": 130, "height": 130 },
+          { "src": "/images/test4.png", "width": 170, "height": 190 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "lang": "AM",
+      "titleSmall": "Ինչպես է ItProNet աշխատում",
+      "titleBig": "Մենք առաջնորդներ ենք ItProNet լուծումներում",
+      "description": "Կառուցեք ավելի լավ անվտանգության էկոհամակարգ ItProNet-ով։ Մեր բարձր կատարողականությամբ, կայուն IP տեսախցիկները վստահելի և անվտանգ են, նախատեսված յուրաքանչյուր տեղակայման համար։",
+      "worksTypes": [
+        {
+          "title": "Արհեստական բանականություն",
+          "description": "Գտեք հետաքրքրող տեսանյութերը վայրկյանների ընթացքում, դասակարգեք մարդկանց, տրանսպորտային միջոցները և աուդիո դեպքերը"
+        },
+        {
+          "title": "Ամբողջացուցիչ իրականություն",
+          "description": "Միացրեք տեխնոլոգիաները, օգտագործեք սարքավորումները և բարելավեք ձեր էկոհամակարգը։"
+        },
+        {
+          "title": "Վեբ զարգացում",
+          "description": "Մենք ստեղծում ենք դինամիկ վեբ հավելվածներ, որոնք ապահովում են բարձր կատարողականություն, ճկունություն և հարթ օգտագործողի փորձ՝ ինտեգրելով ժամանակակից տեխնոլոգիաներ և արդյունավետ ճարտարապետական լուծումներ։"
+        }
+      ],
+      "images": {
+        "leftColumn": [
+          { "src": "/images/test2.png", "width": 330, "height": 274 },
+          { "src": "/images/test3.png", "width": 235, "height": 230 },
+          { "src": "/images/test1.png", "width": 340, "height": 165 }
+        ],
+        "rightColumn": [
+          { "src": "/images/icon.png", "width": 130, "height": 130 },
+          { "src": "/images/test4.png", "width": 170, "height": 190 }
+        ]
+      }
+    }
+  ],
+  
+  "footer": [
+    {
+      "lang": "EN",
+      "logo": "ItProNet",
+      "about": "Your Trusted Partner in IT & Security Solutions",
+      "workingHours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday: 8AM - 6PM",
+        "saturday": "Saturday: 9AM - 5PM (Thursday Off)"
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": [
+          { "label": "Home", "href": "/" },
+          { "label": "Services", "href": "/services" },
+          { "label": "Projects", "href": "#featured" },
+          { "label": "About Us", "href": "#products" },
+          { "label": "Contact", "href": "#contact" }
+        ]
+      },
+      "serviceLinks": {
+        "title": "Service Links",
+        "links": [
+          { "label": "Network design & installation", "href": "/" },
+          { "label": "Server & AD management", "href": "/services" },
+          { "label": "Computer support & maintenance", "href": "#featured" },
+          { "label": "Web Development", "href": "#products" }
+        ]
+      }
+    },
+    {
+      "lang": "AM",
+      "logo": "ItProNet",
+      "about": "Ձեր վստահելի գործընկերը ՏՏ և անվտանգության ոլորտում",
+      "workingHours": {
+        "title": "Աշխատաժամեր",
+        "weekdays": "Երկուշաբթի - Ուրբաթ: 8:00 - 18:00",
+        "saturday": "Շաբաթ: 9:00 - 17:00 (Հինգշաբթի՝ հանգիստ)"
+      },
+      "quickLinks": {
+        "title": "Արագ հղումներ",
+        "links": [
+          { "label": "Գլխավոր", "href": "/" },
+          { "label": "Սերվիսներ", "href": "/services" },
+          { "label": "Նախագծեր", "href": "#featured" },
+          { "label": "Մեր մասին", "href": "#products" },
+          { "label": "Հետադարձ կապ", "href": "#contact" }
+        ]
+      },
+      "serviceLinks": {
+        "title": "Ծառայություններ",
+        "links": [
+          { "label": "IT և ցանցային լուծումներ", "href": "/" },
+          { "label": "Անվտանգության համակարգեր", "href": "/services" },
+          { "label": "Հրդեհային և ահազանգման համակարգեր", "href": "#featured" },
+          { "label": "Մուտքի կառավարման համակարգեր և տուրնիկետներ", "href": "#products" },
+          { "label": "Հաղորդակցության լուծումներ", "href": "#products" },
+          { "label": "Վեբ կայքերի և API մշակում", "href": "#products" }
+        ]
+      }
+    }
+  ]
+}

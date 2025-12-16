@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import { all, header_info, add, edit, remove } from "../controllers/headerInfos.js";
+import { all, slider, add, edit, remove } from "../controllers/sliders.js";
 import { auth } from "../middlewares/auth.js";
 
 const router = Router();
 
 router.get('/', all);
-router.get('/:id', header_info);
+router.get('/:id', slider);
 router.post('/', auth, add);
 router.put('/:id', auth, edit);
 router.delete('/:id', auth, remove);
