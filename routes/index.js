@@ -7,6 +7,7 @@ import SliderRouter from './sliders.js';
 import ServicesRouter from './servicesSections.js';
 import CounterRouter from './counters.js';
 import ItsolutionRouter from './itsolutions.js';
+import FooterRouter from './footers.js';
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use('/api/sliders', SliderRouter);
 router.use('/api/services_sections', ServicesRouter);
 router.use('/api/counter_sections', CounterRouter);
 router.use('/api/itsolutions', ItsolutionRouter);
+router.use('/api/footers', FooterRouter);
 
 export default router;

@@ -22,8 +22,9 @@ model User {
   createdNavbar         Navbar[]
   createdSlider         Slider[]
   createdServiceSection ServiceSection[]
-  createdCounters       Counter[]
-  createdItsolutions    Itsolution[]
+  createdCounter        Counter[]
+  createdItsolution     Itsolution[]
+  createdFooter         Footer[]
 }
 
 model Header_info {
@@ -148,4 +149,57 @@ model Itsolution_image {
   rightColumn  Json
   itsolution   Itsolution? @relation(fields: [itsolutionId], references: [id])
   itsolutionId String?
+}
+
+model Footer {
+  id           String         @id @default(uuid())
+  lang         String
+  logo         String
+  about        String
+  workingHours Working_hour[]
+  quickLinks   Quick_link[]
+  serviceLinks Service_link[]
+  user         User?          @relation(fields: [authorId], references: [id])
+  authorId     String?
+}
+
+model Working_hour {
+  id       String  @id @default(uuid())
+  title    String
+  weekdays String
+  saturday String
+  footer   Footer? @relation(fields: [footerId], references: [id])
+  footerId String?
+}
+
+model Quick_link {
+  id       String            @id @default(uuid())
+  title    String
+  links    Quick_link_item[]
+  footer   Footer?           @relation(fields: [footerId], references: [id])
+  footerId String?
+}
+
+model Quick_link_item {
+  id           String      @id @default(uuid())
+  label        String
+  href         String
+  quickLink    Quick_link? @relation(fields: [quick_linkId], references: [id])
+  quick_linkId String?
+}
+
+model Service_link {
+  id       String              @id @default(uuid())
+  title    String
+  links    Service_link_item[]
+  footer   Footer?             @relation(fields: [footerId], references: [id])
+  footerId String?
+}
+
+model Service_link_item {
+  id             String        @id @default(uuid())
+  label          String
+  href           String
+  serviceLink    Service_link? @relation(fields: [service_linkId], references: [id])
+  service_linkId String?
 }
