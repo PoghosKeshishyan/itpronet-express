@@ -159,8 +159,6 @@ export const edit = async (req, res) => {
 
         res.status(200).json(serviceSection);
     } catch (error) {
-        console.error(error);
-
         if (error.code === "P2025") {
             return res.status(404).json({ message: "Service section not found" });
         }
