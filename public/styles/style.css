@@ -1,3 +1,8 @@
+@import './header.css';
+@import './intro.css';
+@import './resources.css';
+@import './routes.css';
+
 @font-face {
   font-family: 'Helvetica';
   src: url('/fonts/Helvetica.ttf') format('truetype');
@@ -27,112 +32,10 @@
   font-family: 'Helvetica';
 }
 
+.heading {
+  font-size: 30px;
+}
+
 body {
   padding: 50px;
-}
-
-h2 {
-  font-size: 32px;
-  margin-top: 20px;
-}
-
-p {
-  margin: 15px 0;
-}
-
-
-/* ==================== resources ====================*/
-.resources-list {
-  margin: 20px 0;
-}
-
-.resources-list b {
-  font-family: 'Menlo';
-  color: #000;
-}
-
-.resources-list a {
-  color: #0b7500;
-  display: block;
-  font-size: 15px;
-  margin-block: 8px;
-  margin-left: 35px;
-  font-family: 'Menlo';
-  font-weight: bold;
-  letter-spacing: .2px;
-  border-bottom: 2px solid #fff;
-  width: max-content;
-
-  &:hover {
-    border-color: #0b7500;
-  }
-}
-
-
-/* ==================== routes ====================*/
-.routes-list {
-  margin: 20px 0;
-}
-
-.routes-list .route {
-  font-size: 14px;
-  margin: 8px 0;
-  font-family: 'Menlo';
-  font-weight: bold;
-  letter-spacing: .2px;
-  padding: 5px;
-  border-radius: 8px;
-}
-
-.routes-list .route span {
-  display: inline-block;
-  width: 90px;
-  padding: 6px 0;
-  margin-right: 5px;
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-}
-
-.routes-list .route #lock-icon {
-  float: right;
-  line-height: 35px;
-  padding-right: 10px;
-}
-
-.routes-list .route.GET {
-  background: #EFF7FF;
-  border: #61AFFE 1px solid;
-}
-
-.routes-list .route.GET span {
-  background: #61AFFE;
-}
-
-.routes-list .route.POST {
-  background: #ECFAF4;
-  border: #49CC90 1px solid;
-}
-
-.routes-list .route.POST span {
-  background: #49CC90;
-}
-
-.routes-list .route.PUT {
-  background: #FFF5EA;
-  border: #FCA12F 1px solid;
-}
-
-.routes-list .route.PUT span {
-  background: #FCA12F;
-}
-
-.routes-list .route.DELETE {
-  background: #FEEBEB;
-  border: #F93E3E 1px solid;
-}
-
-.routes-list .route.DELETE span {
-  background: #F93E3E;
 }

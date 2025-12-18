@@ -25,6 +25,7 @@ model User {
   createdCounter        Counter[]
   createdItsolution     Itsolution[]
   createdFooter         Footer[]
+  createdServicePage    Service_page[]
 }
 
 model Header_info {
@@ -149,6 +150,27 @@ model Itsolution_image {
   rightColumn  Json
   itsolution   Itsolution? @relation(fields: [itsolutionId], references: [id])
   itsolutionId String?
+}
+
+model Service_page {
+  id           String         @id @default(uuid())
+  lang         String
+  title        String
+  social       String
+  list         String
+  servicesData Servive_list[]
+  user         User?          @relation(fields: [authorId], references: [id])
+  authorId     String?
+}
+
+model Servive_list {
+  id             String        @id @default(uuid())
+  title          String
+  subtitle       String
+  image          String
+  description    String
+  servicePage    Service_page? @relation(fields: [service_pageId], references: [id])
+  service_pageId String?
 }
 
 model Footer {

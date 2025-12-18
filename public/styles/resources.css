@@ -1,0 +1,29 @@
+.resources {
+  margin-top: 15px;
+}
+
+.resources-list {
+  margin: 15px 0 20px 0;
+}
+
+.resources-list b {
+  font-family: 'Menlo';
+  color: #000;
+}
+
+.resources-list a {
+  color: #0b7500;
+  display: block;
+  font-size: 15px;
+  margin-block: 8px;
+  margin-left: 35px;
+  font-family: 'Menlo';
+  font-weight: bold;
+  letter-spacing: .2px;
+  border-bottom: 2px solid #fff;
+  width: max-content;
+
+  &:hover {
+    border-color: #0b7500;
+  }
+}

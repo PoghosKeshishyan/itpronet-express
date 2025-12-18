@@ -1,15 +1,18 @@
-<h2>Resources</h2>
+<div class="resources">
+    <h2 class="heading">Resources</h2>
 
-<div class="resources-list">
-    <b>[</b>
+    <div class="resources-list">
+        <b>[</b>
 
-    <% resources.forEach((elem, index) => { %>
-        <a href="<%= elem %>" target="_blank">
-            "<%= elem %>"<% if (index !== resources.length-1) { %><b>,</b><% } %>
-        </a> 
-    <% }) %>
+        <% resources.forEach((elem, index)=> { %>
+            <a href="<%= elem %>" target="_blank">
+                "<%= elem %>"<% if (index !==resources.length-1) { %><b>,</b>
+            <% } %>
+            </a>
+        <% }) %>
 
-    <b>]</b>
+        <b>]</b>
+    </div>
+
+    <hr>
 </div>
-
-<hr>

@@ -1,0 +1,14 @@
+.intro {
+  margin-top: 40px;
+}
+
+.intro .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.intro .sub-title {
+  font-style: italic;
+  margin-bottom: 20px;
+}

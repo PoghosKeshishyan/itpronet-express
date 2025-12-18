@@ -1,17 +1,20 @@
-<h2>Routes</h2>
+<div class="routes">
+  <h2 class="heading">Routes</h2>
 
-<div class="routes-list">
+  <div class="routes-list">
 
-  <% routes.forEach(elem => { %>
-    <p class="route <%= elem.method %>">
-        <span><%= elem.method %></span> <%= elem.url %>
+    <% routes.forEach(elem=> { %>
+      <p class="route <%= elem.method %>">
+        <span><%= elem.method %></span>
+        <%= elem.url %>
 
-        <% if (elem.access === 'public') { %>
-            <i id="lock-icon" class="fa-solid fa-lock-open"></i>
+        <% if (elem.access==='public' ) { %>
+          <i id="lock-icon" class="fa-solid fa-lock-open"></i>
         <% } else { %>
-            <i id="lock-icon" class="fa-solid fa-lock"></i>
+          <i id="lock-icon" class="fa-solid fa-lock"></i>
         <% } %>
-    </p>
-  <% }) %>
+      </p>
+    <% }) %>
 
+  </div>
 </div>
