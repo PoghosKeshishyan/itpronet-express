@@ -8,6 +8,8 @@ import ServicesRouter from './servicesSections.js';
 import CounterRouter from './counters.js';
 import ItsolutionRouter from './itsolutions.js';
 import ServicesPagesRouter from './servicesPages.js';
+import AboutPageRouter from './about-pages.js';
+import AboutLogoRoter from './about-logos.js';
 import FooterRouter from './footers.js';
 
 const router = Router();
@@ -21,6 +23,8 @@ router.use('/api/services_sections', ServicesRouter);
 router.use('/api/counter_sections', CounterRouter);
 router.use('/api/itsolutions', ItsolutionRouter);
 router.use('/api/services_pages', ServicesPagesRouter);
+router.use('/api/about_pages', AboutPageRouter);
+router.use('/api/about_logos', AboutLogoRoter);
 router.use('/api/footers', FooterRouter);
 
 export default router;

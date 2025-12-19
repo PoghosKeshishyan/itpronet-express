@@ -24,6 +24,7 @@ model User {
   createdServiceSection ServiceSection[]
   createdCounter        Counter[]
   createdItsolution     Itsolution[]
+  createdAboutPage      About_page[]
   createdFooter         Footer[]
   createdServicePage    Service_page[]
 }
@@ -171,6 +172,40 @@ model Servive_list {
   description    String
   servicePage    Service_page? @relation(fields: [service_pageId], references: [id])
   service_pageId String?
+}
+
+model About_page {
+  id           String               @id @default(uuid())
+  lang         String
+  btn_text     String
+  hero_text    String
+  blocks       About_block[]
+  device_block About_device_block[]
+  user         User?                @relation(fields: [authorId], references: [id])
+  authorId     String?
+}
+
+model About_block {
+  id           String      @id @default(uuid())
+  title        String
+  description  String
+  image        String
+  aboutPage    About_page? @relation(fields: [about_pageId], references: [id])
+  about_pageId String?
+}
+
+model About_device_block {
+  id           String      @id @default(uuid())
+  title        String
+  description  String
+  aboutPage    About_page? @relation(fields: [about_pageId], references: [id])
+  about_pageId String?
+}
+
+model About_logo {
+  id    String @id @default(uuid())
+  name  String
+  image String
 }
 
 model Footer {
