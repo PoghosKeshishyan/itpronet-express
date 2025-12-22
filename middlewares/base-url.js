@@ -1,4 +1,5 @@
 export default function BaseUrlMiddleware(req, res, next) {
-    req.baseFullUrl = `${req.protocol}://${req.get('host')}`;
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+    req.baseFullUrl = `${protocol}://${req.get('host')}`;
     next();
 }
