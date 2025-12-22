@@ -1,6 +1,6 @@
 
 const getHomePage = async (req, res) => {
-    const projectVersion = 'v.1.7.'
+    const projectVersion = 'v.1.8.'
 
     const routes = [
         { id: 1, method: 'GET', access: 'public', url: `${req.baseFullUrl}/api/header_infos` },
@@ -13,15 +13,16 @@ const getHomePage = async (req, res) => {
     ];
 
     const resources = [
-        `${req.baseFullUrl}/api/header_infos`,
+        `${req.baseFullUrl}/api/header-infos`,
         `${req.baseFullUrl}/api/navbars`,
         `${req.baseFullUrl}/api/sliders`,
-        `${req.baseFullUrl}/api/services_sections`,
-        `${req.baseFullUrl}/api/counter_sections`,
+        `${req.baseFullUrl}/api/services-sections`,
+        `${req.baseFullUrl}/api/counter-sections`,
         `${req.baseFullUrl}/api/itsolutions`,
-        `${req.baseFullUrl}/api/services_pages`,
-        `${req.baseFullUrl}/api/about_pages`,
-        `${req.baseFullUrl}/api/about_logos`,
+        `${req.baseFullUrl}/api/services-pages`,
+        `${req.baseFullUrl}/api/about-pages`,
+        `${req.baseFullUrl}/api/about-logos`,
+        `${req.baseFullUrl}/api/contact-pages`,
         `${req.baseFullUrl}/api/footers`,
     ];
 
